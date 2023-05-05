@@ -1,0 +1,16 @@
+.social-media {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.social-media img {
+    width: 15px;
+    height: auto;
+    border-radius: 65%;
+}
+
+.content img {
+    position: fixed;
+    border-radius: 90%;
+}
