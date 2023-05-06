@@ -5,12 +5,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmet Ay</title>
+    <title>AHMET AY</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="tum-sayfa">
+    <div class="content">
+        <img src="css/images/profil.jpg" alt="profil" height="240px">
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="header">
+        <div class="logo">
+            <a href="#tohome">AHMET AY</a>
+        </div>
+        <ul id="menu">
+            <li><a href="#tohome">ANA SAYFA</a></li>
+            <li><a href="#tohakkimda">HAKKIMDA</a></li>
+            <li><a href="#toegitim">EĞİTİM</a></li>
+            <li><a href="#toözgeçmiş">ÖZGEÇMİŞ</a></li>
+            <li><a href="#tomessage_form">BANA ULAŞ</a></li>
+            <li><a href="#toiletişim">İLETİŞİM</a></li>
+        </ul>
+    </div>
+
+    <!--ANA SAYFA-->
+    <section id="tohome" class="home">
+        <div class="content">
+            <h2>
+                AHMET AY'IN KİŞİSEL WEBSİTESİNE HOŞGELDİNİZ
+            </h2>
+        </div>
+    </section>
+
+    <!--HAKKIMDA-->
+    <section id="tohakkimda" class="hakkimda">
+        <p>
+            Bandırma Onyedi Eylül Üniversitesi'nde Bilgisayar Mühendisliği 2.sınıf öğrencisiyim.
+        </p>
+    </section>
+
+    <!--ÖZGEÇMİŞ-->
+    <section id="toözgeçmiş" class="özgeçmiş">
+        <p>
+            <br>
+            <b>Kişisel Bilgiler</b><br>
+            12 Ekim 2003, Mardin<br>
+            <b>Eğitim Bilgileri</b><br>
+            Bandırma Onyedi Eylül Üniversitesi Bilgisayar Mühendisliği (2021-2025)<br>
+            <b>İlgi Alanları</b><br>
+            Backend (JAVA), AI <br>
+            <b>Dijital Beceriler</b><br>
+            Java, Python, C/C++, PowerBI
+        </p>
+    </section>
+
+    <!--BANA ULAŞ-->
+    <section id="tomessage_form">
+        <!--<form action="php/index.php" method="post"> -->
+        <div class="contact">
+            <input class="inputs" type="text" name="isim" placeholder="Ad Soyad" required><br>
+            <input class="inputs" type="text" name="email" placeholder="E-mail" required><br>
+            <input class="inputs" type="text" name="tel" placeholder="Telefon "><br>
+            <textarea id="message_area" name=mesaj placeholder="Mesajınız" required></textarea>
+            <input type="submit" value="Gönder">
+        </div>
+        </form>
+    </section>
+
+
+    <!--İLETİŞİM-->
+    <section id="toiletişim" class="iletişim">
         <!--Genel bir div altında toparladım tüm sosyal medya içeriklerini-->
         <div class="social-media">
 
@@ -43,56 +108,12 @@
                         height="15px" />/ay_ahmet__</button>
             </a>
         </div>
+    </section>
 
-        <div class="content">
-            <img src="css/images/profil.jpeg" alt="profil" height="240px">
-        </div>
-        <br><br><br><br><br><br><br><br><br><br><br>
+    <div class="footer">
+        <p id="footer_info">All rights reserved <b>|</b> 2023</p>
+    </div>
 
-        <div class="header">
-            <div class="logo">
-                <a href="#tohome">AHMET AY</a>
-            </div>
-            <ul id="menu">
-                <li><a href="#tohome">ANA SAYFA</a></li>
-                <li><a href="#tohakkimda">HAKKIMDA</a></li>
-                <li><a href="#tohaegitim">EĞİTİM</a></li>
-                <li><a href="#toözgeçmiş">ÖZGEÇMİŞ</a></li>
-                <li><a href="#tomessage_form">BANA ULAŞ</a></li>
-                <li><a href="#toiletişim">İLETİŞİM</a></li>
-            </ul>
-        </div>
-
-        <!--HAKKIMDA-->
-        <section id="tohakkimda" class="hakkimda">
-            <p>
-                Bandırma Onyedi Eylül Üniversitesi'nde Bilgisayar Mühendisliği 2.sınıf öğrencisiyim.
-            </p>
-        </section>
-
-        <!--ÖZGEÇMİŞ-->
-        <section id="toözgeçmiş" class="özgeçmiş">
-            <p>
-                <br>
-                <b>Kişisel Bilgiler</b><br>
-                12 Ekim 2003, Mardin<br>
-                <b>Eğitim Bilgileri</b><br>
-                Bandırma Onyedi Eylül Üniversitesi Bilgisayar Mühendisliği (2021-2025)<br>
-                <b>İlgi Alanları</b><br>
-                Backend (JAVA), AI <br>
-                <b>Dijital Beceriler</b><br>
-                Java, Python, C/C++, PowerBI
-            </p>
-        </section>
-
-        <!--İLETİŞİM-->
-        <section id="toiletişim" class="iletişim">
-            <p>
-                <b>LinkedIn:</b> "https://www.linkedin.com/in/ayahmet/"<br>
-                <b>Github:</b> "https://github.com/Ahmetay882"<br>
-                <b>Mail:</b> ayahmet882@gmail.com<br>
-            </p>
-        </section>
 </body>
 
 </html>
