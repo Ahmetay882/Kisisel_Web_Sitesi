@@ -5,114 +5,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AHMET AY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <title>Ahmet Ay | Ana Sayfa</title>
 </head>
 
 <body>
-    <div class="content">
-        <img src="css/images/profil.jpg" alt="profil" height="240px">
-    </div>
-    <br><br><br><br><br><br><br><br><br><br><br>
+    <section id="menu">
+        <div id="logo">Ahmet Ay</div>
+        <nav>
+            <a href="">ANA SAYFA</a>
+            <a href="">HAKKIMDA</a>
+            <a href="">ÖZGEÇMİŞ</a>
+            <a href="">BANA ULAŞ</a>
+            <a href="">İLETİŞİM</a>
+        </nav>
+    </section>
 
-    <div class="header">
-        <div class="logo">
-            <a href="#tohome">AHMET AY</a>
-        </div>
-        <ul id="menu">
-            <li><a href="#tohome">ANA SAYFA</a></li>
-            <li><a href="#tohakkimda">HAKKIMDA</a></li>
-            <li><a href="#toegitim">EĞİTİM</a></li>
-            <li><a href="#toözgeçmiş">ÖZGEÇMİŞ</a></li>
-            <li><a href="#tomessage_form">BANA ULAŞ</a></li>
-            <li><a href="#toiletişim">İLETİŞİM</a></li>
-        </ul>
-    </div>
-
-    <!--ANA SAYFA-->
-    <section id="tohome" class="home">
-        <div class="content">
-            <h2>
-                AHMET AY'IN KİŞİSEL WEBSİTESİNE HOŞGELDİNİZ
-            </h2>
+    <section id="anasayfa">
+        <div id="black"></div>
+        <div id="icerik">
+            <h3>Ahmet Ay</h3>
+            <hr width="300" align=left>
+            <p>
+                Bandırma Onyedi Eylül Üniversitesinde Bilgisayar Mühendisliği bölümü 2.sınıf öğrencisi.
+            </p>
         </div>
     </section>
 
-    <!--HAKKIMDA-->
-    <section id="tohakkimda" class="hakkimda">
-        <p>
-            Bandırma Onyedi Eylül Üniversitesi'nde Bilgisayar Mühendisliği 2.sınıf öğrencisiyim.
-        </p>
-    </section>
+    <section id="hakkimizda">
+        <h3>Hakkımızda</h3>
+        <div id="container">
+            <div id="sol">
+                <h5 id="h5sol">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </h5>
+            </div>
 
-    <!--ÖZGEÇMİŞ-->
-    <section id="toözgeçmiş" class="özgeçmiş">
-        <p>
-            <br>
-            <b>Kişisel Bilgiler</b><br>
-            12 Ekim 2003, Mardin<br>
-            <b>Eğitim Bilgileri</b><br>
-            Bandırma Onyedi Eylül Üniversitesi Bilgisayar Mühendisliği (2021-2025)<br>
-            <b>İlgi Alanları</b><br>
-            Backend (JAVA), AI <br>
-            <b>Dijital Beceriler</b><br>
-            Java, Python, C/C++, PowerBI
-        </p>
-    </section>
+            <div id="sag">
+                <span>L</span>
+                <p id="psag">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quae. Veniam facere repellat,
+                    esse, perferendis similique placeat corporis nihil assumenda aliquid illo harum minima. Minus minima
+                    ad laborum optio explicabo.
+                </p>
+            </div>
 
-    <!--BANA ULAŞ-->
-    <section id="tomessage_form">
-        <!--<form action="php/index.php" method="post"> -->
-        <div class="contact">
-            <input class="inputs" type="text" name="isim" placeholder="Ad Soyad" required><br>
-            <input class="inputs" type="text" name="email" placeholder="E-mail" required><br>
-            <input class="inputs" type="text" name="tel" placeholder="Telefon "><br>
-            <textarea id="message_area" name=mesaj placeholder="Mesajınız" required></textarea>
-            <input type="submit" value="Gönder">
-        </div>
-        </form>
-    </section>
+            <img src="css/image/hakkimda.jpg" alt="" class="img-fluid mt100">
 
-
-    <!--İLETİŞİM-->
-    <section id="toiletişim" class="iletişim">
-        <!--Genel bir div altında toparladım tüm sosyal medya içeriklerini-->
-        <div class="social-media">
-
-            <!--Linkedln-->
-            <a href="https://www.linkedin.com/in/ayahmet/" class="text-decoration-none" target="_blank"
-                alt="linkedln sitesine gider">
-                <button type="button" class="btn-outline-first"> <img src="css/images/linkedln_icon.jpg"
-                        height="15px" />
-                    /ayahmet</button>
-            </a>
-
-            <!--Githup-->
-            <a href="https://github.com/Ahmetay882" class="text-decoration-none" target="_blank"
-                alt="githup sitesine gider">
-                <button type="button" class="btn-outline-second"><img src="css/images/githup_icon.jpg" height="15px" />
-                    /Ahmetay882</button>
-            </a>
-
-            <!--Instagram-->
-            <a href="https://www.instagram.com/ayahmet__/" class="text-decoration-none" target="_blank"
-                alt="instagram sitesine gider">
-                <button type="button" class="btn-outline-third"><img src="css/images/instagram_icon.jpg"
-                        height="15px" />/ayahmet__</button>
-            </a>
-
-            <!--Twitter-->
-            <a href="https://twitter.com/ay_ahmet__" class="text-decoration-none" target="_blank"
-                alt="tiwitter sitesine gider">
-                <button type="button" class="btn-outline-fourth"><img src="css/images/tiwitter_icon.png"
-                        height="15px" />/ay_ahmet__</button>
-            </a>
+            <p id="pson">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo facilis saepe cupiditate fuga iste
+                voluptates delectus reiciendis repellat, est reprehenderit esse adipisci dolorum labore similique nemo
+                rerum laudantium quasi et.
+            </p>
         </div>
     </section>
 
-    <div class="footer">
-        <p id="footer_info">All rights reserved <b>|</b> 2023</p>
-    </div>
+    <section id="iletisim">
+        <div class="container">
+            <h3 id="h3iletisim">İletişim</h3>
+            <div id="iletisimopak">
+                <div id="formgroup">
+                    <div id="solform">
+                        <input type="text" class="form-control" name="isim" placeholder="Ad Soyad" required>
+                        <input type="text" class="form-control" name="tel" placeholder="Telefon Numarası" required>
+                    </div>
+
+                    <div id="sagform">
+                        <input type="email" class="form-control" name="email" placeholder="Email Adresiniz" required>
+                        <input type="text" class="form-control" name="konu" placeholder="Konu Başlığı" required>
+                    </div>
+
+                    <textarea class="form-control" name="mesaj" id="" cols="30" rows="10"
+                        placeholder="Mesajınızı Giriniz" required></textarea>
+
+                    <input type="submit" value="Gönder">
+                </div>
+
+                <div id="adres">
+                    <h4 id="adresbaslik">Adres:</h4>
+                    <p class="adresp">Gençosman Mahallesi</p>
+                    <p class="adresp">Doğanbey Caddesi</p>
+                    <p class="adresp">Aktaran Sokak</p>
+                    <p class="adresp">(538) 034 72 24</p>
+                    <p class="adresp">Email: ayahmet882@gmail.com</p>
+                </div>
+            </div>
+
+            <footer>
+                <div id="copyright">2023 | Tüm Hakları Saklıdır</div>
+                <div id="socialfooter">
+                    <!--Linkedln-->
+                    <a href="https://www.linkedin.com/in/ayahmet/" target="_blank">
+                        <img src="css/image/linkedln.jpg" height="55px">
+                    </a>
+
+                    <!--Githup-->
+                    <a href="https://github.com/Ahmetay882" target="_blank">
+                        <img src="css/image/githup.jpg" height="55px">
+                    </a>
+
+                    <!--Twitter-->
+                    <a href="https://twitter.com/ay_ahmet__" target="_blank">
+                        <img src="css/image/twitter.jpg" height="55px">
+                    </a>
+                </div>
+                <a href="#menu"><img src="css/image/yukarı.jpg" height="85px" id="up"></a>
+            </footer>
+
+        </div>
+    </section>
 
 </body>
 

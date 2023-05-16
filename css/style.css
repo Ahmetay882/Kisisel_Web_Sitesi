@@ -1,188 +1,253 @@
+/* html dosyasındaki tüm sayfayı yani sayfadaki tüm etiketleri ilgilendirir */
+* {
+    box-sizing: border-box;
+    /* sayfaya verilen padding ve border değerleri ekleyince içeriğin büyümesini engeller*/
+}
+
 body {
-    background-color: #f0f8ff;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
 }
 
-.content img {
-    position: fixed;
-    margin-top: 30px;
-    margin-left: 50px;
-    height: 180px;
-}
-
-.header {
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 100%;
+#menu {
     height: 80px;
+    padding: 0 20px;
 }
 
-.header ul {
-    margin-right: 120px;
-    margin-left: 50px;
-    line-height: 75px;
-}
-
-.header ul li {
-    margin: 8px;
-    line-height: 75px;
-}
-
-.header ul li a {
-    color: #000000;
-    margin-right: 15px;
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
-
-}
-
-.header ul a:hover {
-    color: #cd5c5c;
-}
-
-.header .logo {
-    display: inline-block;
-    margin-top: 230px;
-    margin-left: 20px;
-}
-
-.logo a {
-    margin-left: 50px;
-    text-decoration: none;
-    font-size: 33px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    color: #000000;
-    padding: 5px;
-    border-bottom: #6495ed;
-    border-bottom-style: solid;
-    border-bottom-left-radius: 10px;
-    border-top: #6495ed;
-    border-top-style: solid;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-/*ANA SAYFA*/
-.home {
-    margin-left: 350px;
-}
-
-/*hakkımda*/
-.hakkimda {
-    text-align: start;
-    flex-direction: column;
-    display: flex;
-    margin-right: auto;
-    margin-left: 350px;
-    width: 950px;
-    margin-top: 680px;
-}
-
-.hakkimda p {
+#logo {
     font-size: 30px;
-    color: #000000;
+    line-height: 80px;
+    color: #003666;
+    float: left;
 }
 
-/*özgeçmiş*/
-.özgeçmiş {
-    text-align: start;
-    flex-direction: column;
-    display: flex;
-    margin-right: auto;
-    margin-left: 350px;
-    width: 950px;
-    margin-top: 585px;
+nav {
+    float: right;
+    line-height: 80px;
 }
 
-.özgeçmiş p {
-    color: #000000;
+nav a:link {
+    text-decoration: none;
+    margin-right: 25px;
+    color: #003666;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #003666;
+}
+
+nav a:visited {
+    text-decoration: none;
+    margin-right: 25px;
+    color: #003666;
+}
+
+#anasayfa {
+    height: 600px;
+    background-image: url("image/arka_plan.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#black {
+    height: 600px;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+#icerik {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+
+    /* içeriği tam orta noktaya göre konumlandırma yapabilmek için kullanılır */
+    transform: translate(-50%, -50%);
+
+    color: #fff;
+    font-size: 20px;
+}
+
+#hakkimizda {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+
+    /* her kelimenin baş harfini büyük yapar */
+    text-transform: capitalize;
+
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 55px;
+    color: #003666;
+    font-weight: 600;
+}
+
+#container {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+}
+
+#sol {
+    float: left;
+    border-right: 3px solid #fff;
+    font-size: 30px;
+    width: 400px;
+    color: #445c6e;
+}
+
+#h5sol {
+    line-height: 1.6;
     font-size: 22px;
+    font-weight: 600;
 }
 
-.özgeçmiş b {
-    color: #000000;
-    font-size: 22px;
+#h5sol,
+#sag {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
 }
 
-/*BANA ULAŞ*/
-.contact {
-    margin-left: 350px;
-    margin-top: 585px;
+span {
+    font-size: 50px;
+    margin-right: 7px;
+    line-height: 42px;
+    color: #003666;
+    font-weight: 600;
+    float: left;
 }
 
-.contact h3 {
-    font-size: 35px;
-    color: white;
-    display: flex;
-    justify-content: start;
-    padding: 30px;
+#sag {
+    float: right;
+    width: 750px;
+    color: #999;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 100;
 }
 
-.inputs {
-    padding: 4px;
-    margin: 7px;
-    width: 300px;
-    height: 30px;
-    font-size: 17px;
-
+#img-fluid {
+    max-width: 100;
+    height: auto;
 }
 
-#message_area {
-    height: 240px;
-    width: 300px;
-    padding: 4px;
-    margin: 7px;
-    font-size: 17px;
+#mt100 {
+    margin-top: 100px;
 }
 
-#tomessage_form {
-    margin-bottom: 190px;
-    width: 500px;
-    height: 800px;
+#pson {
+    color: #999;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 100;
+}
+
+#iletisim {
+    background: url("image/iletisim.jpg");
+    background-size: cover;
+    padding: 50px;
+    height: auto;
+    text-align: center;
+}
+
+#h3iletisim {
+    color: #fff;
+}
+
+#iletisimopak {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px, 20px;
+    border-radius: 5 px;
+    margin-bottom: 50px;
+    height: 550px;
+}
+
+#formgroup {
+    width: 700px;
+    float: left;
+    height: 500px;
+    text-align: left;
+}
+
+#solform {
+    width: 50%;
+    float: left;
+    padding-right: 5px;
+}
+
+#sagform {
+    width: 50%;
+    float: right;
+    padding-left: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+textarea {
+    font-family: Arial;
 }
 
 input[type="submit"] {
     cursor: pointer;
-    background-color: #778899;
-    font-size: 25px;
-    padding: 10px;
-    width: 180px;
-    clear: both;
-    margin-left: 5.8px;
-}
-
-/*iletişim*/
-.iletişim {
-    display: flex;
-    font-size: 24px;
-    color: #000000;
-    width: 600px;
-    text-align: start;
-    margin-right: auto;
-    margin-left: 350px;
-
-}
-
-.iletişim p {
-    font-size: 22px;
-    margin-top: 12px;
-}
-
-.iletişim b {
-    color: #000000;
-    font-size: 23px;
-}
-
-.footer {
-    flex: 1;
-    background-color: #f0f8ff;
-    text-align: center;
-}
-
-.footer p {
-    text-decoration: none;
-    color: #000000;
+    background-color: wheat;
     font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px, 30px;
+    color: #000;
+    border: 2px solid wheat;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#adres {
+    width: 450px;
+    float: right;
+    padding: 30px;
+    height: 500px;
+    text-align: left;
+}
+
+#adresbaslik {
+    font-size: 30px;
+    color: black;
+}
+
+.adresp {
+    color: saddlebrown;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+
+#copyright {
+    color: saddlebrown;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+#up {
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 15px;
+    padding: 18px, 30px;
+    margin-top: 20px;
 }
