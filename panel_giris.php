@@ -40,7 +40,6 @@
             border: 2px solid dodgerblue;
         }
 
-        /* Set a style for the submit button */
         .btn {
             background-color: dodgerblue;
             color: white;
@@ -59,14 +58,8 @@
 
 <body>
 
-    <form action="panel_giris.html" method="post" style="max-width:500px;margin:auto">
+    <form action="panel_giris.php" method="post" style="max-width:500px;margin:auto">
         <h2>Yönetici Girişi</h2>
-
-        <!--Kullanıcı Adı-->
-        <div class="input-container">
-            <i class="fa fa-user icon"></i>
-            <input class="input-field" type="text" placeholder="Kullanıcı Adı" name="usrnm">
-        </div>
 
         <!--Email-->
         <div class="input-container">
@@ -86,3 +79,21 @@
 </body>
 
 </html>
+
+<?php
+session_start(); //oturum başlatma
+
+if (isset($_POST["email"], $_POST["psw"])) {
+
+    if ($_POST["email"] !== "ayahmet882@gmail.com" && $_POST["psw"] !== "123456789") {
+        echo "<script>alert('Kullanıcı adınız ve şifreniz hatalı !')</script>";
+    } elseif ($_POST["email"] !== "ayahmet882@gmail.com") {
+        echo "<script>alert('Kullanıcı adınız hatalı !')</script>";
+    } elseif ($_POST["psw"] !== "123456789") {
+        echo "<script>alert('Şifreniz hatalı !')</script>";
+    } elseif ($_POST["email"] == "ayahmet882@gmail.com" && $_POST["psw"] == "123456789") {
+        $_SESSION["user"] = $_POST["email"];
+        header("location:panel.php");
+    }
+}
+?>

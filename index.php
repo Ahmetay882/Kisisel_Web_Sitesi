@@ -66,33 +66,34 @@
     <section id="iletisim">
         <div class="container">
             <h3 id="h3iletisim">İletişim</h3>
-            <div id="iletisimopak">
-                <div id="formgroup">
-                    <div id="solform">
-                        <input type="text" class="form-control" name="isim" placeholder="Ad Soyad" required>
-                        <input type="text" class="form-control" name="tel" placeholder="Telefon Numarası" required>
+            <form action="index.php" method="post">
+                <div id="iletisimopak">
+                    <div id="formgroup">
+                        <div id="solform">
+                            <input type="text" class="form-control" name="isim" placeholder="Ad Soyad" required>
+                            <input type="text" class="form-control" name="tel" placeholder="Telefon Numarası" required>
+                        </div>
+
+                        <div id="sagform">
+                            <input type="email" class="form-control" name="email" placeholder="Email Adresiniz" required>
+                            <input type="text" class="form-control" name="konu" placeholder="Konu Başlığı" required>
+                        </div>
+
+                        <textarea class="form-control" name="mesaj" id="" cols="30" rows="10" placeholder="Mesajınızı Giriniz" required></textarea>
+
+                        <input type="submit" value="Gönder">
                     </div>
 
-                    <div id="sagform">
-                        <input type="email" class="form-control" name="email" placeholder="Email Adresiniz" required>
-                        <input type="text" class="form-control" name="konu" placeholder="Konu Başlığı" required>
+                    <div id="adres">
+                        <h4 id="adresbaslik">Adres:</h4>
+                        <p class="adresp">Gençosman Mahallesi</p>
+                        <p class="adresp">Doğanbey Caddesi</p>
+                        <p class="adresp">Aktaran Sokak</p>
+                        <p class="adresp">(538) 034 72 24</p>
+                        <p class="adresp">Email: ayahmet882@gmail.com</p>
                     </div>
-
-                    <textarea class="form-control" name="mesaj" id="" cols="30" rows="10"
-                        placeholder="Mesajınızı Giriniz" required></textarea>
-
-                    <input type="submit" value="Gönder">
                 </div>
-
-                <div id="adres">
-                    <h4 id="adresbaslik">Adres:</h4>
-                    <p class="adresp">Gençosman Mahallesi</p>
-                    <p class="adresp">Doğanbey Caddesi</p>
-                    <p class="adresp">Aktaran Sokak</p>
-                    <p class="adresp">(538) 034 72 24</p>
-                    <p class="adresp">Email: ayahmet882@gmail.com</p>
-                </div>
-            </div>
+            </form>
 
             <footer>
                 <div id="copyright">2023 | Tüm Hakları Saklıdır</div>
@@ -121,3 +122,24 @@
 </body>
 
 </html>
+
+<!-- veri tabanı bağlatımızı sayfamıza bağlıyoruz -->
+<?php
+include("baglanti.php");
+
+if (isset($_POST["isim"], $_POST["tel"], $_POST["email"], $_POST["konu"], $_POST["mesaj"])) { //isset veri olup olmadığını kontrol eder
+    $adsoyad = $_POST["isim"];
+    $telefon = $_POST["tel"];
+    $email = $_POST["email"];
+    $konu = $_POST["konu"];
+    $mesaj = $_POST["mesaj"];
+
+    $ekle = "INSERT INTO iletisim(adsoyad, telefon, email, konu, mesaj_icerigi) VALUES ('" . $adsoyad . "','" . $telefon . "','" . $email . "','" . $konu . "', '" . $mesaj . "')";
+
+    if ($baglan->query($ekle) === TRUE) {
+        echo "<script>alert('Mesajınız Başarı ile Gönderilmiştir.')</script>";
+    } else {
+        echo "<script>alert('Mesajınız Gönderilirken Bir Hata Oluştu !')</script>";
+    }
+}
+?>
