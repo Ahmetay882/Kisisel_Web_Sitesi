@@ -16,11 +16,10 @@
     <section id="menu">
         <div id="logo">Ahmet Ay</div>
         <nav>
-            <a href="">ANA SAYFA</a>
-            <a href="">HAKKIMDA</a>
-            <a href="">ÖZGEÇMİŞ</a>
-            <a href="">BANA ULAŞ</a>
-            <a href="">İLETİŞİM</a>
+            <a href="#anasayfa">ANA SAYFA</a>
+            <a href="#hakkımda">HAKKIMDA</a>
+            <a href="#ozgecmis">ÖZGEÇMİŞ</a>
+            <a href="#iletisim">İLETİŞİM</a>
         </nav>
     </section>
 
@@ -36,7 +35,7 @@
     </section>
 
     <section id="hakkimizda">
-        <h3>Hakkımızda</h3>
+        <h3>Hakkımda</h3>
         <div id="container">
             <div id="sol">
                 <h5 id="h5sol">
